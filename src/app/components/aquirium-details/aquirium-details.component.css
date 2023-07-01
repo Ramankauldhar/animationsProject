@@ -1,0 +1,82 @@
+.headerDiv{
+    background-image:url("../../../assets/header.JPG");
+    height: 80px;
+}
+
+h1{
+    text-align: center;  
+    padding:10px;
+    animation-name: textAnimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+}
+h3{
+    padding:10px;
+    background-color: rgb(25, 171, 228);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.imgContainer{
+    flex-basis: 48%;
+    text-align: center;
+    border: 1px solid rgb(25, 171, 228);
+    padding:10px;
+    margin:2px;
+    overflow: hidden;
+}
+img{
+    width:80%;
+    height:400px;
+    padding:25px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    transition: transform 0.3s ease;
+    animation-name: imgAnimation1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+}
+p{
+    font-size: 20px;
+}
+@keyframes textAnimation {
+    0% {
+            transform: rotate(2deg);
+        }
+    
+        65% {
+            transform: rotate(-2deg);
+        }
+    
+        100% {
+            transform: rotate(2deg);
+        }
+    }
+    
+
+@keyframes imgAnimation1 {
+           0% {
+                transform: scale(1.0);
+            }
+        
+            65% {
+                transform: scale(1.1);
+            }
+        
+            100% {
+                transform: scale(1.0);
+            }
+}    
+
+@media screen and (max-width:1000px){
+    .container{
+        display: block;
+        flex-wrap: nowrap;
+    }
+}
