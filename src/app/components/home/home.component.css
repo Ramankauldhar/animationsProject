@@ -1,28 +1,31 @@
-.header{
-    background-image:url("../../../assets/header.JPG");
-    width:100%;
+.header {
+    background-image: url("../../../assets/header.JPG");
+    width: 100%;
 }
-h1{
+
+h1 {
     text-align: center;
     color: white;
     padding: 30px;
-    margin:0px;
-}
-h2{
-    text-align: center;
-    background-color: rgb(107, 218, 240);
-    padding:30px;
-    margin-top:20px;
+    margin: 0px;
 }
 
-.topImages{
+h2 {
+    text-align: center;
+    background-color: rgb(107, 218, 240);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.topImages {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:100%;
-    height:900px;
+    width: 100vw;
+    height: 100vh;
 }
-p{
+
+p {
     font-size: large;
 }
 
@@ -36,79 +39,101 @@ p{
     padding: 10px;
     font-size: 40px;
 }
-.placesContainer{
-    margin-left:auto;
-    margin-right:auto;
+
+.placesContainer {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top:10px;
-    width:100%;
+    margin-top: 10px;
+    width: 100%;
 }
-.firstPlace{
-    width:31%;
-    margin:10px;
-    border: 1px solid rgb(107, 218, 240);
-    overflow: hidden; 
-}
-.secondPlace{
-    width:31%;
+
+.firstPlace {
+    width: 31%;
     margin: 10px;
     border: 1px solid rgb(107, 218, 240);
-    overflow: hidden; 
+    overflow: hidden;
 }
-.thirdPlace{
-    width:31%;
+
+.secondPlace {
+    width: 31%;
     margin: 10px;
     border: 1px solid rgb(107, 218, 240);
-    overflow: hidden; 
+    overflow: hidden;
 }
-.placesImages{
-    width:100%;
-    height:400px;
-    padding:25px;
+
+.thirdPlace {
+    width: 31%;
+    margin: 10px;
+    border: 1px solid rgb(107, 218, 240);
+    overflow: hidden;
+}
+
+.placesImages {
+    width: 100%;
+    height: 400px;
+    padding: 25px;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.placesImages:hover{
+
+.placesImages:hover {
     transform: scale(1.1);
 }
-.containerBody{
-    padding-bottom:20px;
-    background-color:  rgb(200, 162, 221);
+
+.containerBody {
+    padding-bottom: 20px;
+    background-color: rgb(200, 162, 221);
     animation-name: divColorAnimation;
     animation-timing-function: ease-in-out;
     animation-duration: 4s;
-    animation-iteration-count: infinite; 
+    animation-iteration-count: infinite;
 }
-.fa-star{
-    color:rgb(255, 230, 3);
+
+.fa-star {
+    color: rgb(255, 230, 3);
 }
 
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1100px) {
     .text-overlay {
         top: 40%;
     }
-    .firstPlace, .secondPlace, .thirdPlace{
-        width:46%;
+
+    .firstPlace,
+    .secondPlace,
+    .thirdPlace {
+        width: 46%;
     }
 }
-@media screen and (max-width:540px){
+
+@media screen and (max-width:540px) {
     .text-overlay {
         top: 40%;
     }
-    .placesContainer{
+
+    .placesContainer {
         display: block;
         flex-wrap: nowrap;
     }
-    .firstPlace, .secondPlace, .thirdPlace{
-        width:100%;
+
+    .firstPlace,
+    .secondPlace,
+    .thirdPlace {
+        width: 100%;
     }
 }
 
-@keyframes divColorAnimation{
-    from{background-color:rgb(107, 218, 240);}
-    to{background-color:rgb(200, 162, 221);;}
+@keyframes divColorAnimation {
+    from {
+        background-color: rgb(107, 218, 240);
+    }
+
+    to {
+        background-color: rgb(200, 162, 221);
+        ;
+    }
 }
