@@ -189,3 +189,39 @@ p {
         }
     }
 }
+
+
+
+/*Animation*/
+.animationFromRight {
+    position: relative;
+    transition: 2s;
+}
+
+.active {
+    animation: moveFromRight 1s linear;
+}
+
+.active2 {
+    animation: moveFromLeft 1s linear;
+}
+
+@keyframes moveFromRight {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveFromLeft {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

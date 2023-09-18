@@ -1,4 +1,6 @@
-.footer{
-    height:50px;
+.footer {
+    height: 50px;
     background-image: url("../../../assets/header.JPG");
+    display: block;
+    text-align: center;
 }

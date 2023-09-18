@@ -14,8 +14,11 @@
         <div class="imgcontainer">
             <h3>Skypod</h3>
             <div class="infoContainer">
-                <img class="image" src="../../../assets/skypod2.JPG" alt="" />
-                <p>SkyPod is the highest observation platform in the Western Hemisphere. It's an amazing experience,
+                <img class="image animationFromLeft" [class.active2]="isAnimationActive"
+                    src="../../../assets/skypod2.JPG" alt="" />
+                <p class="animationFromRight" [class.active]="isAnimationActive">SkyPod is the highest observation
+                    platform in the Western Hemisphere. It's
+                    an amazing experience,
                     please
                     go for it.</p>
             </div>
@@ -23,21 +26,27 @@
         <div class="imgcontainer">
             <h3>Edge Walk</h3>
             <div class="infoContainer">
-                <p>116 storeys up, walking along the outside edge of the CN Tower’s main pod, secured by only a
+                <p class="animationFromLeft" [class.active2]="isAnimationActive">116 storeys up, walking along the
+                    outside edge of the CN Tower’s main pod,
+                    secured by only a
                     harness—EdgeWalk
                     is an
                     experience like no other. Since opening in 2011, EdgeWalk has thrilled thousands and marked major
                     milestones
                     for guests
                     of all kinds. Do you have what it takes to walk the Walk?</p>
-                <img class="image" src="../../../assets/edgeWalk.JPG" alt="" />
+                <img class="image animationFromRight" [class.active]="isAnimationActive"
+                    src="../../../assets/edgeWalk.JPG" alt="" />
             </div>
         </div>
         <div class="imgcontainer">
             <h3>360 Restaurant</h3>
             <div class="infoContainer">
-                <img class="image" src="../../../assets/restaurant.JPG" alt="" />
-                <p>The CN Tower isn’t just an architectural marvel—it’s a culinary one, too. Home to the world’s highest
+                <img class="image animationFromLeft" [class.active2]="isAnimationActive"
+                    src="../../../assets/restaurant.JPG" alt="" />
+                <p class="animationFromRight" [class.active]="isAnimationActive">The CN Tower isn’t just an
+                    architectural marvel—it’s a culinary one, too.
+                    Home to the world’s highest
                     wine
                     cellar, 360
                     The Restaurant at the CN Tower gets its name from the full rotation it makes, providing a dramatic
@@ -49,7 +58,10 @@
         <div class="imgcontainer">
             <h3>Main Observation</h3>
             <div class="infoContainer">
-                <p>Step off our high-speed elevators on the Main Observation Level, and you’ll be 346 metres (1,136
+                <p class="animationFromLeft" [class.active2]="isAnimationActive">Step off our high-speed elevators on
+                    the
+                    Main Observation Level, and you’ll
+                    be 346 metres (1,136
                     feet)
                     above
                     ground. Our
@@ -57,14 +69,18 @@
                     perfect
                     setting for
                     taking photos and making memories.</p>
-                <img class="image" src="../../../assets/mainObservation.JPG" alt="" />
+                <img class="image animationFromRight" [class.active]="isAnimationActive"
+                    src="../../../assets/mainObservation.JPG" alt="" />
             </div>
         </div>
         <div class="imgcontainer">
             <h3>Glass Floor</h3>
             <div class="infoContainer">
-                <img class="image" src="../../../assets/glass.JPG" alt="" />
-                <p>Glass Floor is an amazing experience. You can take the picture with your friends. When you walk on
+                <img class="image animationFromLeft" [class.active2]="isAnimationActive" src="../../../assets/glass.JPG"
+                    alt="" />
+                <p class="animationFromRight" [class.active]="isAnimationActive">Glass Floor is an amazing experience.
+                    You can take the picture with your
+                    friends. When you walk on
                     it,
                     you can see the beauty of Toronto in different angel.
                     When you visit it, Make sure you experience it.
@@ -74,7 +90,9 @@
         <div class="imgcontainer">
             <h3>Gift Shop</h3>
             <div class="infoContainer">
-                <p>Be sure to browse the Tower’s Gift Shop to find the perfect memento of your visit. With works by
+                <p class="animationFromLeft" [class.active2]="isAnimationActive">Be sure to browse the Tower’s Gift Shop
+                    to find the perfect memento of your
+                    visit. With works by
                     Indigenous
                     artists,
                     great gifts from local designers and unique CN Tower memorabilia, the shop has a little bit of
@@ -82,7 +100,8 @@
                     that makes us
                     Canada’s celebration destination.
                 </p>
-                <img class="image" src="../../../assets/gift.JPG" alt="" />
+                <img class="image animationFromRight" [class.active]="isAnimationActive" src="../../../assets/gift.JPG"
+                    alt="" />
             </div>
         </div>
 
